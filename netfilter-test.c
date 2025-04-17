@@ -29,7 +29,7 @@ int check_http_host(unsigned char *data, int size) {
 
     if (payload_len <= 0) return 0;
 
-    // HTTP Request일 때만 분석 (GET/POST 등으로 시작)
+
     if (strncmp((char *)payload, "GET", 3) != 0 &&
         strncmp((char *)payload, "POST", 4) != 0 &&
         strncmp((char *)payload, "HEAD", 4) != 0)
