@@ -13,7 +13,6 @@
 
 char *block_host = NULL;
 
-// HTTP에서 Host 필드 파싱
 int check_http_host(unsigned char *data, int size) {
     if (size <= 0) return 0;
 
